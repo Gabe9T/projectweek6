@@ -1,26 +1,26 @@
-# (Application Name)
-#Name of Project
-#### (Brief Description of Application)
-#### Description of Project
 
+# Currency Exchanger
 By Gabriel Tucker
+
+## Description of Project
+Create a currency exchange application. A user should be able to type in an amount (in U.S. dollars) and then choose which currency it should be converted to (such as francs, marks, rupees, and so on)
+
+
 
 ## Technologies Used
 
-*   _List all_
-*   _the major technologies_
-*   _you used in your project_
-*   _here_
+*   _HTML_
+*   _CSS_
+*   _JavaScript_
+*   _API's_
 
 ## Description
 
 ## Setup/Installation Requirements
-
-*   _This is a great place_
-*   _to list setup instructions_
-*   _in a simple_
-*   _easy-to-understand_
-*   _format_
+* _Download VsCode https://www.youtube.com/watch?v=ITxcbrfEcIY_
+* _Clone This Repo To VsCode https://github.com/P2NTS/projectweek4_
+* Install Live Server Extension For VsCode [Here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer')
+* _After Installing Either Click "Go Live" On Bottom Right of Vscode_
 
 ## Known Bugs
 
