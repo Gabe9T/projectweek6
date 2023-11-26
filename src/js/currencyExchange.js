@@ -1,17 +1,25 @@
-export async function getCurrency(currency) {
-    const apiKey = process.env.API_KEY;
-    const url = `https://v6.exchangerate-api.com/v6/${apiKEy}/latest/${currency}`;
-    const options = {
-        method: 'GET',
-
-    };
-
-    try {
-        const response = await fetch(url);
-        const resultText = await response.text();
-        const result = JSON.parse(resultText);
-        return result;
-    } catch (error) {
-        return error;
+export class Currency {
+    static async getCurrency(url) {
+        try {
+            const response = await fetch(url);
+            const resultTxt = await response.text();
+            const result = JSON.parse(resultTxt);
+            if (!response.ok) {
+                throw new Error('Request failed with status: ' + response.status + " " + result["error-type"]);
+            }
+            return { result };
+        } catch (error) {
+            return { error };
+        }
     }
+
+    static async converted(currency1, currency2, ammount) {
+        const apiKey = process.env.API_KEY;
+        const url = `https://v6.exchangerate-api.com/v6/${apiKey}/pair/${currency1}/${currency2}/${ammount}`;
+
+        return await this.getCurrency(url);
+    }
+
 }
+
+
