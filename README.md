@@ -13,13 +13,16 @@ Create a currency exchange application. A user should be able to type in an amou
 *   _CSS_
 *   _JavaScript_
 *   _API's_
+*   _Node_
+*   _NPM_
 
 ## Description
 
 ## Setup/Installation Requirements
 * _Download VsCode https://www.youtube.com/watch?v=ITxcbrfEcIY_
 * _Clone This Repo To VsCode https://github.com/P2NTS/projectweek4_
-* Install Live Server Extension For VsCode [Here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer')
+* Install Live Server Extension For VsCode [Here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer')\
+* _Type "npm run build"  and "npm run start" in terminal_
 * _After Installing Either Click "Go Live" On Bottom Right of Vscode_
 
 ## Known Bugs
