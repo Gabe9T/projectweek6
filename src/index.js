@@ -1,12 +1,15 @@
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/styles.css";
 import { Currency } from "./js/currencyExchange";
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("converted").addEventListener("submit", handleFormSubmission);
+    document.querySelector("button").addEventListener("click", handleFormSubmission);
 });
 
 async function handleFormSubmission(e) {
     e.preventDefault();
+
     const currency1Element = document.getElementById("currency1");
     const currency1 = currency1Element.value;
 
@@ -16,7 +19,7 @@ async function handleFormSubmission(e) {
     const ammount = document.getElementById("ammount").value;
 
     if (!isNumeric(ammount) || ammount <= 0) {
-        showError("Please enter a valid ammount greater than 0.");
+        showError("Please enter a valid amount greater than 0.");
         return;
     }
 
@@ -29,15 +32,13 @@ async function handleFormSubmission(e) {
         if (error) {
             showError(`Your request resulted in an error: ${error.message}`);
         } else if (result.conversion_result !== undefined) {
-            showConversion(`${ammount} ${currency1} is equal to ${result.conversion_result}${currency2}.`);
-
+            showConversion(`${ammount}${currency1} is equal to ${result.conversion_result}${currency2}.`);
         } else {
-            showEmpty("Please enter an input ammount.");
+            showEmpty("Please enter an input amount.");
         }
 
         results.classList.remove("hidden");
     } catch (error) {
-
         showError("An unexpected error occurred.");
     }
 }
