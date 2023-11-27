@@ -1,11 +1,8 @@
-
 # Currency Exchanger
 By Gabriel Tucker
 
 ## Description of Project
-Create a currency exchange application. A user should be able to type in an amount (in U.S. dollars) and then choose which currency it should be converted to (such as francs, marks, rupees, and so on)
-
-
+Create a currency exchange application. A user should be able to type in an amount (In any currency) and then choose which currency it should be converted to (such as francs, marks, rupees, euros, etc.)
 
 ## Technologies Used
 
@@ -14,21 +11,19 @@ Create a currency exchange application. A user should be able to type in an amou
 *   _JavaScript_
 *   _API's_
 *   _Node_
-*   _NPM_
-
-## Description
 
 ## Setup/Installation Requirements
 * _Download VsCode https://www.youtube.com/watch?v=ITxcbrfEcIY_
-* _Clone This Repo To VsCode https://github.com/P2NTS/projectweek6_
-* Install Live Server Extension For VsCode [Here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer')\
-* _Type "npm run build"  and "npm run start" in terminal_
-* _After Installing Either Click "Go Live" On Bottom Right of Vscode_
+* _Clone This Repo To VsCode https://github.com/Gabe9T/projectweek6_
+* Install Live Server Extension For VsCode [Here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer')
+* Get an API key from [Here](https://exchangerate-api.com)
+*  Add a `.env` file in root folder, add  `API_KEY=APIKey`
+* _Type `"npm run start"`, `"npm run build" `and, `"npm install"` in terminal_
+
 
 ## Known Bugs
 
-*   _None as of now_
-
+*   API key varible doesn't work but using API key in plain text works.
 
 ## License
 
