@@ -1,4 +1,6 @@
+
 export class Currency {
+
     static async getCurrency(url) {
         try {
             const response = await fetch(url);
@@ -14,12 +16,8 @@ export class Currency {
     }
 
     static async converted(currency1, currency2, ammount) {
-        const apiKey = process.env.API_KEY;
-        const url = `https://v6.exchangerate-api.com/v6/${apiKey}/pair/${currency1}/${currency2}/${ammount}`;
-
+        const key = process.env.API_KEY;
+        const url = `https://v6.exchangerate-api.com/v6/${key}/pair/${currency1}/${currency2}/${ammount}`;
         return await this.getCurrency(url);
     }
-
 }
-
-
