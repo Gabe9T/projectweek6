@@ -23,7 +23,7 @@ Create a currency exchange application. A user should be able to type in an amou
 
 ## Known Bugs
 
-*   API key varible doesn't work but using API key in plain text works.
+*   None.
 
 ## License
 
