@@ -18,7 +18,7 @@ Create a currency exchange application. A user should be able to type in an amou
 * Install Live Server Extension For VsCode [Here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer 'https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer')
 * Get an API key from [Here](https://exchangerate-api.com)
 *  Add a `.env` file in root folder, add  `API_KEY=APIKey`
-* _Type `"npm run start"`, `"npm run build" `and, `"npm install"` in terminal_
+* _Type `"npm install"`, `"npm run build" `and, `"npm run start"` in terminal_
 
 
 ## Known Bugs
